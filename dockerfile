@@ -34,7 +34,7 @@ ADD https://go.microsoft.com/fwlink/?LinkID=760868 /tmp/vscode.deb
 RUN cd /tmp && dpkg -i ./vscode.deb && rm vscode.deb
 
 #Add non-root user
-RUN useradd -ms /bin/bash -u 1001 appuser
+RUN useradd -ms /bin/bash -u 1000 appuser
 USER appuser
 WORKDIR /home/appuser
 
