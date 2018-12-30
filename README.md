@@ -7,4 +7,4 @@ docker run -v $HOME/Projects:/home/appuser/Projects --net=host --env="DISPLAY" -
 
 NOTES:
 1. Create "Projects" folder before running the command to make it writable.
-2. appuser id (1001 in the dockerfile) must be the same id for logged in user.
+2. appuser id (1000 in the dockerfile) must be the same id for logged in user.
